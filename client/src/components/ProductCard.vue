@@ -1,7 +1,8 @@
 <template>
+    <!--! 37.18.102.197 -->
     <div class="product-card">
         <div v-if="product.attributes.sale" class="sale">Sale</div>
-        <img :src="baseURL + product.attributes.img.data.attributes.url">
+        <img :src="'http://' + baseURL + product.attributes.img.data.attributes.url" />
         <h3>{{ product.attributes.title }}</h3>
         <p>{{ product.attributes.description }}</p>
 
@@ -16,34 +17,36 @@
 </template>
 
 <script>
-
-
-
-export default {
-    name: "ProductCard",
+   console.log(import.meta.env.VITE_APP_HOST + `:` + import.meta.env.VITE_APP_PORT);
+   
+   
+   export default {
+       name: "ProductCard",
     props: {
         product: {},
     },
     data() {
         return {
-            baseURL: 'http://localhost:1337',
+            // baseURL: `https://localhost:1337`,
+            baseURL: `${import.meta.env.VITE_APP_HOST}:${import.meta.env.VITE_APP_PORT}`,
+            // baseURL: `${import.meta.env.HOST}:${import.meta.env.PORT}`,
             sum: '', // Сумма продукта для редактирования
         }
-
+        
     },
     methods: {
     //     changePrice() {
-    //         const priceChild = this.product.attributes.price
-    //         this.$emit('changePriceEvent', priceChild)
-    //     }
-
+        //         const priceChild = this.product.attributes.price
+        //         this.$emit('changePriceEvent', priceChild)
+        //     }
+        
     },
     computed: {
         priceRedact() {
             let sale = this.product.attributes.sale
             return sale > 0 ? true : false
         },
-
+        
     }
 }
 
