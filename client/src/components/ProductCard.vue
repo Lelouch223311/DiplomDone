@@ -2,7 +2,7 @@
     <!--! 37.18.102.197 -->
     <div class="product-card">
         <div v-if="product.attributes.sale" class="sale">Sale</div>
-        <img :src="baseURL + product.attributes.img.data.attributes.url" />
+        <img :src="'http://' + baseURL + product.attributes.img.data.attributes.url" />
         <h3>{{ product.attributes.title }}</h3>
         <p>{{ product.attributes.description }}</p>
 
