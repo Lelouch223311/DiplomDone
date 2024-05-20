@@ -14,11 +14,16 @@ const router = createRouter({
             name: 'newpage',
             component: () => import('../views/NewPage.vue')
         },
+        // {
+        //     path: '/prodcard',
+        //     name: 'prodcard',
+        //     component: () => import('../components/ProductCard.vue')
+        // },
         {
-            path: '/prodcard',
-            name: 'prodcard',
-            component: () => import('../components/ProductCard.vue')
-        },
+            path: '/cards',
+            name: 'cards',
+            component: () => import('../views/Cards.vue')
+        }
     ]
 });
 
