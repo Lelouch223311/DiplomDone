@@ -5,17 +5,16 @@ import { RouterView, RouterLink } from 'vue-router';
 
 
 <template>
-
   <header>
     <ul>
       <li>
-        <RouterLink to="/">Glavnaya</RouterLink>
+        <RouterLink to="/">Главная</RouterLink>
       </li>
       <li>
         <!-- <RouterLink to="/about">O Nas</RouterLink> -->
       </li>
       <li>
-        <RouterLink to="/cards">Cards</RouterLink>
+        <RouterLink to="/cards">Карточки</RouterLink>
       </li>
     </ul>
   </header>
@@ -30,13 +29,13 @@ import { RouterView, RouterLink } from 'vue-router';
 
     <ul>
       <li>
-        <RouterLink to="/">Glavnaya</RouterLink>
+        <RouterLink to="/">Главная</RouterLink>
       </li>
       <li>
         <!-- <RouterLink to="/about">O Nas</RouterLink> -->
       </li>
       <li>
-        <RouterLink to="/cards"><span style="color: red;">Cards</span></RouterLink>
+        <RouterLink to="/cards">Карточки</RouterLink>
       </li>
     </ul>
   </footer>
@@ -87,7 +86,8 @@ footer{
   width: 100%;
   height: 7%;
   border-radius: 10px;
-  background-color: black;
+  /* background-color: green; */
+  box-shadow: 0 0 10px black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,13 +97,21 @@ footer{
     display: flex;
     justify-content: space-between;
     gap: 50px;
-
+    
     li{
-
+      
       a{
         text-decoration: none;
-        color: white;
+        color: black;
+
+        &:hover{
+          color: blueviolet;
+          text-shadow: 5px 5px 5px 65px black;
+        }
       }
+    }
+    & .router-link-active{
+      color: red;
     }
   }
 }

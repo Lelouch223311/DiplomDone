@@ -6,8 +6,8 @@
         <h3>{{ product.attributes.title }}</h3>
         <p>{{ product.attributes.description }}</p>
 
-        <p :class="{ price: priceRedact }">{{ product.attributes.price  + ' шекелей' }}</p>
-        <h4 v-if="product.attributes.sale">{{ product.attributes.sale + ' шекелей' }}</h4>
+        <p :class="{ price: priceRedact }">{{ product.attributes.price  + ' &#8381;' }}</p>
+        <h4 v-if="product.attributes.sale">{{ product.attributes.sale + ' &#8381;' }}</h4>
 
         <!-- <button @click="changePrice">Редакт.</button> -->
         <!-- <button @click="$emit('myFunc', this.product.attributes.price)">Button</button> -->
@@ -54,6 +54,7 @@
 </script>
 
 <style>
+
 .product-card {
     width: 200px;
     height: 360px;
@@ -67,9 +68,15 @@
     gap: 10px;
 
     img {
+        display: flex;
         width: 100%;
+        height: 150px;
     }
 
+    p{
+        display: flex;
+        height: max-content;
+    }
     & .sale {
         display: flex;
         flex-direction: column;

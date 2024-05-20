@@ -32,9 +32,11 @@ export default {
         },
    },
    async beforeMount(){
-       const data = await fetch('http://localhost:1337/api/products?populate=*')
-       const js = await data.json()
-       this.products = js.data
+        // const data = await fetch(` 'http://' ${import.meta.env.VITE_APP_HOST}:${import.meta.env.VITE_APP_PORT}` + '/api/products?populate=*')
+        const data = await fetch(`http://localhost:1337/api/products?populate=*`)
+    
+        const js = await data.json()
+        this.products = js.data
    }
    }
 
