@@ -2,7 +2,7 @@
     <!--! 37.18.102.197 -->
     <div class="product-card">
         <div v-if="product.attributes.sale" class="sale">Sale</div>
-        <img :src="'http://' + baseURL + product.attributes.img.data.attributes.url" />
+        <img :src="baseURL + product.attributes.img.data.attributes.url" />
         <h3>{{ product.attributes.title }}</h3>
         <p>{{ product.attributes.description }}</p>
 
@@ -27,8 +27,10 @@
     },
     data() {
         return {
+            // http://37.18.102.197/cards
             // baseURL: `https://localhost:1337`,
-            baseURL: `${import.meta.env.VITE_APP_HOST}:${import.meta.env.VITE_APP_PORT}`,
+            // baseURL: `http://${import.meta.env.VITE_APP_HOST}:${import.meta.env.VITE_APP_PORT}`,
+            baseURL: `http://${import.meta.env.VITE_APP_HOST}`,
             // baseURL: `${import.meta.env.HOST}:${import.meta.env.PORT}`,
             sum: '', // Сумма продукта для редактирования
         }
