@@ -22,6 +22,8 @@ h1{
 }
 </style>
 <script>
+console.log(` 'Путь этого файла: client/app.vue' ${import.meta.env.VITE_APP_HOST} + ":" + ${import.meta.env.VITE_APP_PORT}`);
+
 // import ProductCard from '../components/ProductCard.vue';
 
 
