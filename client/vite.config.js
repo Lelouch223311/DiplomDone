@@ -13,7 +13,7 @@ import vue from '@vitejs/plugin-vue'
 // dotenv.config()
 
 import dotenv from 'dotenv';
-import dotenvExpand from 'dotenv-expand';
+import dotenvExpand from 'dotenv-expand'; // added dotenvExpand
 import { join } from 'path';
 import { webpack } from 'dotenv-webpack';
 
