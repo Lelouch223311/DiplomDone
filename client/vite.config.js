@@ -12,9 +12,21 @@ import vue from '@vitejs/plugin-vue'
 
 // dotenv.config()
 
+import dotenv from 'dotenv';
+import dotenvExpand from 'dotenv-expand';
+import { join } from 'path';
+import { webpack } from 'dotenv-webpack';
+
+const env = dotenv.config({ path: join(__dirname, '.env') });
+dotenvExpand(env);
 
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue()],
+  plugins: 
+  [vue(),
+    webpack({
+      path: join(__dirname, '.env')
+    })
+  ],
 })
