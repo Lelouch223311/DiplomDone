@@ -3,12 +3,8 @@
         <h1>Создатель Сайта решил сделать эту страницу Корневой(по секрету говорю)</h1>
     </div>
 
-
-
-    <div class="">
-        <h1 v-show="title">Главная</h1>
-    </div>
 </template>
+
 <style scoped>
 h1{
     display: flex;
@@ -22,7 +18,8 @@ h1{
 }
 </style>
 <script>
-console.log(` 'Путь этого файла: client/views/HomeView.vue' ${import.meta.env.VITE_APP_HOST} + ":" + ${import.meta.env.VITE_APP_PORT}`);
+// console.log(` 'Путь этого файла: client/views/HomeView.vue' ${import.meta.env.VITE_APP_HOST} + ":" + ${import.meta.env.VITE_APP_PORT}`);
+console.log(`${procces.env.VITE_APP_HOST}:${procces.env.VITE_APP_PORT}  HomeView.vue`)
 
 // import ProductCard from '../components/ProductCard.vue';
 
