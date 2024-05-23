@@ -1,7 +1,7 @@
 <template>
     <!--! 37.18.102.197 -->
     <div class="product-card">
-        <div v-if="product.attributes.sale" class="sale">Sale</div>
+        <div v-if="product.attributes.sale" class="sale">Скидка</div>
         <img :src="baseURL + product.attributes.img.data.attributes.url" />
         <h3>{{ product.attributes.title }}</h3>
         <p>{{ product.attributes.description }}</p>
@@ -17,8 +17,8 @@
 </template>
 
 <script>
-   console.log(import.meta.env.VITE_APP_HOST + `:` + import.meta.env.VITE_APP_PORT); 
-   console.log(`${procces.env.VITE_APP_HOST}:${procces.env.VITE_APP_PORT} components/productcard`);
+//    console.log(import.meta.env.VITE_APP_HOST + `:` + import.meta.env.VITE_APP_PORT); 
+//    console.log(`${procces.env.VITE_APP_HOST}:${procces.env.VITE_APP_PORT} components/productcard`);
 
    
    
@@ -30,8 +30,8 @@
     data() {
         return {
             // http://37.18.102.197/cards
-            baseURL: `http://37.18.102.197:1337/`,
-            // baseURL: `https://localhost:1337`,
+            // baseURL: `http://37.18.102.197:1337`,
+            baseURL: `https://localhost:1337`,
             // baseURL: `http://${import.meta.env.VITE_APP_HOST}:${import.meta.env.VITE_APP_PORT}`,
             // baseURL: `http://${import.meta.env.VITE_APP_HOST}:${import.meta.env.VITE_APP_PORT}`,
             // baseURL: `${import.meta.env.HOST}:${import.meta.env.PORT}`,

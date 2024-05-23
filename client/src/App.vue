@@ -1,7 +1,7 @@
 <script setup>
 import { RouterView, RouterLink } from 'vue-router';
 
-console.log(`${procces.env.VITE_APP_HOST}:${procces.env.VITE_APP_PORT} app.vue`)
+// console.log(`${procces.env.VITE_APP_HOST}:${procces.env.VITE_APP_PORT} app.vue`)
 
 
 

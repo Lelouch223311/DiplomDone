@@ -16,7 +16,7 @@
 
 <script>
    console.log(import.meta.env.VITE_APP_HOST + `:` + import.meta.env.VITE_APP_PORT); 
-console.log(`${procces.env.VITE_APP_HOST}:${procces.env.VITE_APP_PORT}`)
+// console.log(`${procces.env.VITE_APP_HOST}:${procces.env.VITE_APP_PORT}`)
 
 import ProductCard from '../components/ProductCard.vue';
 export default {
@@ -35,9 +35,9 @@ export default {
         },
    },
    async beforeMount(){
-        const data = await fetch(`http://${procces.env.VITE_APP_HOST}:${procces.env.VITE_APP_PORT}/api/products?populate=*`)
+        // const data = await fetch(`http://${procces.env.VITE_APP_HOST}:${procces.env.VITE_APP_PORT}/api/products?populate=*`)
         // const data = await fetch(`http://${import.meta.env.VITE_APP_HOST}:${import.meta.env.VITE_APP_PORT}/api/products?populate=*`)
-        // const data = await fetch(`http://localhost:1337/api/products?populate=*`)
+        const data = await fetch(`http://localhost:1337/api/products?populate=*`)
     
         const js = await data.json()
         this.products = js.data
