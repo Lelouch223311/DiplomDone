@@ -30,9 +30,10 @@
     data() {
         return {
             // http://37.18.102.197/cards
+            baseURL: `http://37.18.102.197:1337/`,
             // baseURL: `https://localhost:1337`,
             // baseURL: `http://${import.meta.env.VITE_APP_HOST}:${import.meta.env.VITE_APP_PORT}`,
-            baseURL: `http://${import.meta.env.VITE_APP_HOST}:${import.meta.env.VITE_APP_PORT}`,
+            // baseURL: `http://${import.meta.env.VITE_APP_HOST}:${import.meta.env.VITE_APP_PORT}`,
             // baseURL: `${import.meta.env.HOST}:${import.meta.env.PORT}`,
             sum: '', // Сумма продукта для редактирования
         }
