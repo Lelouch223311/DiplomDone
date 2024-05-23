@@ -26,12 +26,12 @@ console.log(dotenvExpand);
 // import dotenvExpand from 'dotenv-expand'; // added dotenvExpand
 import { join } from 'path';
 // import { webpack } from 'dotenv-webpack';
-import pkg from 'dotenv-webpack';
-const webpack = pkg;
+// import pkg from 'dotenv-webpack';
+// const webpack = pkg;
 
 
-const env = dotenv.config({ path: join(__dirname, '.env') });
-dotenvExpand(env);
+// const env = dotenv.config({ path: join(__dirname, '.env') });
+// dotenvExpand(env);
 
 
 // https://vitejs.dev/config/
