@@ -15,6 +15,7 @@
 </template>
 
 <script>
+   console.log(import.meta.env.VITE_APP_HOST + `:` + import.meta.env.VITE_APP_PORT); 
 console.log(`${procces.env.VITE_APP_HOST}:${procces.env.VITE_APP_PORT}`)
 
 import ProductCard from '../components/ProductCard.vue';
