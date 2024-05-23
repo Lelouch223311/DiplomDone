@@ -13,7 +13,9 @@ import vue from '@vitejs/plugin-vue'
 // dotenv.config()
 
 import dotenv from 'dotenv';
-const dotenvExpand = require('dotenv-expand');
+// const dotenvExpand = require('dotenv-expand');
+import dotenvExpand from 'dotenv-expand';
+
 console.log(`dotenvExpand ==> ` + dotenvExpand);
 
 // import dotenvExpand from 'dotenv-expand'; // added dotenvExpand
