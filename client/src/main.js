@@ -9,7 +9,7 @@ import router from './router/index.js'
 // require('dotenv').config()
 
 // console.log(process.env.HOST)
-console.log(`${procces.env.VITE_APP_HOST}:${procces.env.VITE_APP_PORT} main.js`)
+// console.log(`${procces.env.VITE_APP_HOST}:${procces.env.VITE_APP_PORT} main.js`)
 
 
 
