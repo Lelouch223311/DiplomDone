@@ -1,4 +1,15 @@
+Работает:
+client: npm run dev => не работают картинки (GET https://localhost:1337/uploads/vue_cffae4ddda.png net::ERR_SSL_PROTOCOL_ERROR)
+strapi*
+
+
+
+
+===========================================
 Краткий гайд  ≦ Что да как ≧
+
+
+
 
 Client:
 
