@@ -16,7 +16,7 @@ import dotenv from 'dotenv';
 // const dotenvExpand = require('dotenv-expand');
 import dotenvExpand from 'dotenv-expand';
 
-console.log(`dotenvExpand ==> ` + dotenvExpand);
+console.log(dotenvExpand);
 
 // import dotenvExpand from 'dotenv-expand'; // added dotenvExpand
 import { join } from 'path';
