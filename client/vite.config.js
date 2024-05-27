@@ -10,6 +10,7 @@ const env = dotenv.config({ path: join(__dirname, '.env') });
 // dotenvExpand(env);
 
 export default defineConfig({
+  base: '/<REPO>/',
   plugins: [vue(),
     // webpack({
     //   path: join(__dirname, '.env')
