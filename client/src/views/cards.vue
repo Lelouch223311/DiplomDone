@@ -9,7 +9,6 @@
         :key="item.id"
         />
     </div>
-
     <!-- <input type="text" v-model="price" placeholder="цена"> -->
  
 </template>
@@ -37,7 +36,8 @@ export default {
    async beforeMount(){
         // const data = await fetch(`http://${procces.env.VITE_APP_HOST}:${procces.env.VITE_APP_PORT}/api/products?populate=*`)
         // const data = await fetch(`http://${import.meta.env.VITE_APP_HOST}:${import.meta.env.VITE_APP_PORT}/api/products?populate=*`)
-        const data = await fetch(`http://localhost:1337/api/products?populate=*`)
+        // const data = await fetch(`http://localhost:1337/api/products?populate=*`)
+        const data = await fetch(`https://hopeful-birds-d30950b277.strapiapp.com/api/products?populate=*`)
     
         const js = await data.json()
         this.products = js.data
