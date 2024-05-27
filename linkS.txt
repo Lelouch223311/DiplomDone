@@ -1,0 +1,1 @@
+https://v3.vitejs.ru/guide/static-deploy.html
