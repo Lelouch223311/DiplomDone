@@ -47,6 +47,7 @@ export default {
 </script>
 
 <style scoped>
+
 .products{
     width: 95%;
     margin: 40px auto;
