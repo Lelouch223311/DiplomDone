@@ -12,13 +12,13 @@ import { RouterView, RouterLink } from 'vue-router';
   <header>
     <ul>
       <li>
-        <RouterLink to="/">Главная</RouterLink>
+        <RouterLink to="/FrontEnd/">Главная</RouterLink>
       </li>
       <li>
         <!-- <RouterLink to="/about">O Nas</RouterLink> -->
       </li>
       <li>
-        <RouterLink to="/cards">Карточки</RouterLink>
+        <RouterLink to="/FrontEnd/cards">Карточки</RouterLink>
       </li>
     </ul>
   </header>
@@ -33,13 +33,13 @@ import { RouterView, RouterLink } from 'vue-router';
 
     <ul>
       <li>
-        <RouterLink to="/">Главная</RouterLink>
+        <RouterLink to="/FrontEnd/">Главная</RouterLink>
       </li>
       <li>
         <!-- <RouterLink to="/about">O Nas</RouterLink> -->
       </li>
       <li>
-        <RouterLink to="/cards">Карточки</RouterLink>
+        <RouterLink to="/FrontEnd/cards">Карточки</RouterLink>
       </li>
     </ul>
   </footer>
