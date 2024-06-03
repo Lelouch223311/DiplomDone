@@ -89,6 +89,7 @@
         position: absolute;
         top: 10px;
         left: -10px;
+        z-index: 100;
         background-color: red;
         border-radius: 0 10px;
         color: white;
