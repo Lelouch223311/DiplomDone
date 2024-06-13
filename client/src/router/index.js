@@ -5,12 +5,12 @@ const router = createRouter({
     history: createWebHistory(),
     routes: [
         {
-            path: '/FrontEnd/',
+            path: '/',
             name: 'home',
             component: () => import('../views/HomeView.vue')
         },
         {
-            path: '/FrontEnd/newpage',
+            path: '/newpage',
             name: 'newpage',
             component: () => import('../views/NewPage.vue')
         },
@@ -20,7 +20,7 @@ const router = createRouter({
         //     component: () => import('../components/ProductCard.vue')
         // },
         {
-            path: '/FrontEnd/cards',
+            path: '/cards',
             name: 'cards',
             component: () => import('../views/cards.vue')
         }

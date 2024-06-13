@@ -1,47 +1,21 @@
 <template>
-
-    <header class="mainfirst w-full h-full absolute bg-cover justify-between p-12">
-        <div class="flex justify-between w-full">
-
-            <div class="logo text-white font-bold p-2">QWERy</div>
-
-            <div class="nav flex gap-10 text-white">
-                <nav class="navigation">
-                    <RouterLink to="/FrontEnd/info">Информация</RouterLink>
-                </nav>
-                <nav class="navigation">
-                    <RouterLink to="/FrontEnd/aboutme">О Нас</RouterLink>
-                </nav>
-                <nav class="navigation">
-                    <RouterLink to="/FrontEnd/culture">Культура</RouterLink>
-                </nav>
-            </div>
-            <div class="search-box flex justify-center items-center w-56 gap-1 p-2 border rounded-md border-none">
-                <button class="search-button flex border-none bg-none">
-                    <img class="w-5 h-5" src="../assets/icons/cart.png" alt="Search">
-                </button>
-                <input type="text" class="search-input flex bg-transparent border-none focus:border-none"
-                    placeholder="Search...">
-            </div>
-
-        </div>
-        <div class="center-text-header flex justify-center text-center flex-col p-32 items-start ml-96">
-            <div class="font-bold text-white text-6xl">
-                Откройте
-            </div>
-            <div class="texttwo flex text-white text-5xl justify-center">
-                для себя чудесную Индонезию
-            </div>
-        </div>
-    </header>
-    <main class="maintwo shadow-black text-white">
-        <div>
-            Вам понравился отпуск?
-        </div>
-        <div>
-            Вы будете поражены, если примете участие в этом парусном туре по острову Комодо. Так что это также обязательно для вас: помимо наслаждения туризмом на острове Комодо, вы также должны попробовать морской туризм.  Прекрасные воды Комодо познакомят вас со многими путешественниками из других стран.
-        </div>
-    </main>
+    <HeaderIndonesia />
+    <MainIndonesia 
+        :imgSrc="image1"
+        header="Вам понравился отпуск ?"
+        caption="Вы будете поражены, если примете участие в этом парусном туре по острову Комодо. Так что это также обязательно для вас: помимо наслаждения туризмом на острове Комодо, вы также должны попробовать морской туризм.  Прекрасные воды Комодо познакомят вас со многими путешественниками из других стран."
+    />
+    <MainIndonesia 
+        :imgSrc="image2" 
+        header="Вам понравился отпуск ?"
+        caption="Вы будете поражены, если примете участие в этом парусном туре по острову Комодо. Так что это также обязательно для вас: помимо наслаждения туризмом на острове Комодо, вы также должны попробовать морской туризм.  Прекрасные воды Комодо познакомят вас со многими путешественниками из других стран."
+    />
+    <!-- <MainIndonesia :items="[
+        {image: '../assets/img/IndonesiaComponent2.png', description: 'Вам понравился отпуск?', descriptiontwo: 'Вы будете поражены, если примете участие в этом парусном туре по острову Комодо. Так что это также обязательно для вас: помимо наслаждения туризмом на острове Комодо, вы также должны попробовать морской туризм.  Прекрасные воды Комодо познакомят вас со многими путешественниками из других стран.'}, 
+        {image: '../assets/img/IndonesiaComponent2.png', description: 'This is a sample description 2'}
+      ]"/> -->
+      
+      
 
 </template>
 
@@ -74,21 +48,25 @@
 }
 </style>
 <script>
+import HeaderIndonesia from '../components/HeaderIndonesia.vue';
+import MainIndonesia from '../components/MainIndonesia.vue';
 // console.log(` 'Путь этого файла: client/views/HomeView.vue' ${import.meta.env.VITE_APP_HOST} + ":" + ${import.meta.env.VITE_APP_PORT}`);
 // console.log(`${procces.env.VITE_APP_HOST}:${procces.env.VITE_APP_PORT}  HomeView.vue`)
 
-// import ProductCard from '../components/ProductCard.vue';
-
-
+// import ProductCard from '../components/ProductCard.vue'
 
 export default {
-
+    components: {
+        HeaderIndonesia,
+        MainIndonesia,
+    },
     data() {
         return {
             products: [],
             title: false,
             inputValue: null,
-
+            image1: '../assets/img/IndonesiaComponent2.png',
+            image2: '../assets/img/IndonesiaComponent2.png',
         };
     },
     methods: {

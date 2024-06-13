@@ -8,21 +8,19 @@ import { RouterView, RouterLink } from 'vue-router';
 </script>
 
 
-
 <template>
-  <header>
+  <!-- <header>
     <ul>
       <li>
         <RouterLink to="/FrontEnd/">Главная</RouterLink>
       </li>
-      <li>
-        <!-- <RouterLink to="/about">O Nas</RouterLink> -->
+      <li> <RouterLink to="/about">O Nas</RouterLink> 
       </li>
       <li>
         <RouterLink to="/FrontEnd/cards">Карточки</RouterLink>
       </li>
     </ul>
-  </header>
+  </header> -->
 
   <main>
     <RouterView />
@@ -53,9 +51,8 @@ body {
   user-select: none;
 }
 
-header{
+/* header{
   width: 100%;
-  height: 70px;
   box-shadow: 0 0 10px black;
   display: flex;
   justify-content: center;
@@ -79,7 +76,7 @@ header{
       }
     }
   }
-}
+} */
 
 main{
   flex: 1 1 auto;

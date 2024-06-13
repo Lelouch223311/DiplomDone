@@ -6,3 +6,5 @@ https://flowbite.com/docs/typography/text/
 https://tailwindcss.ru/docs/background-size/
 
 https://www.figma.com/design/TqY7ToWcG9Wv6NJdnPtwtt/QWERy-landing-(Copy)?node-id=4-17&t=xZlDbC5UmjeJD6UZ-0
+
+https://strapi.io/cloud
