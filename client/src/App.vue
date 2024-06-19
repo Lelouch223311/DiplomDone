@@ -9,6 +9,7 @@ import { RouterView, RouterLink } from 'vue-router';
 
 
 <template>
+
   <!-- <header>
     <ul>
       <li>
@@ -26,22 +27,6 @@ import { RouterView, RouterLink } from 'vue-router';
     <RouterView />
 
   </main>
-
-
-  <footer>
-
-    <ul>
-      <li>
-        <RouterLink to="/FrontEnd/">Главная</RouterLink>
-      </li>
-      <li>
-        <!-- <RouterLink to="/about">O Nas</RouterLink> -->
-      </li>
-      <li>
-        <RouterLink to="/FrontEnd/cards">Карточки</RouterLink>
-      </li>
-    </ul>
-  </footer>
 </template>
 
 <style scoped>
@@ -49,6 +34,9 @@ import { RouterView, RouterLink } from 'vue-router';
 
 body {
   user-select: none;
+}
+main{
+  background-color: black;
 }
 
 /* header{
@@ -84,11 +72,11 @@ main{
   
 }
 
-footer{
+/* footer{
   width: 100%;
   height: 7%;
   border-radius: 10px;
-  /* background-color: green; */
+
   box-shadow: 0 0 10px black;
   display: flex;
   justify-content: center;
@@ -117,5 +105,6 @@ footer{
     }
   }
 }
+*/
 
 </style>

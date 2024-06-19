@@ -1,6 +1,9 @@
 module.exports = {
   purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   darkMode: false,
+  content: [
+    "./node_modules/flowbite/**/*.js"
+],
   theme: {
     extends: {},
     backgroundSize: {
@@ -14,7 +17,9 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 }
 }
 

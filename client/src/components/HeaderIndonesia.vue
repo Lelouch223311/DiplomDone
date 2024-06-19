@@ -19,7 +19,7 @@
             <button class="search-button flex border-none bg-none">
                 <img class="w-5 h-5" src="../assets/icons/cart.png" alt="Search">
             </button>
-            <input type="text" class="search-input flex bg-transparent border-none focus:border-none"
+            <input type="text" class="search-input flex bg-transparent border-none focus:border-none font-sans"
                 placeholder="Search...">
         </div>
 

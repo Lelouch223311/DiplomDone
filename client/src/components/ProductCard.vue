@@ -4,8 +4,8 @@
         <div v-if="product.attributes.sale" class="sale">Скидка</div>
         <img :src="product.attributes.img.data.attributes.url" />
         <h3>{{ product.attributes.title }}</h3>
-        <p>{{ product.attributes.description }}</p>
-
+        <p class="text-red-600">{{ product.attributes.description }}</p>
+        
         <p :class="{ price: priceRedact }">{{ product.attributes.price  + ' &#8381;' }}</p>
         <h4 v-if="product.attributes.sale">{{ product.attributes.sale + ' &#8381;' }}</h4>
 
@@ -30,7 +30,7 @@
     data() {
         return {
             // http://37.18.102.197/cards
-            baseURL: `https://hopeful-birds-d30950b277.strapiapp.com/`,
+            baseURL: `https://cozy-chicken-d411647e9f.strapiapp.com/`,
             // baseURL: `https://localhost:1337`,
             // baseURL: `http://${import.meta.env.VITE_APP_HOST}:${import.meta.env.VITE_APP_PORT}`,
             // baseURL: `http://${import.meta.env.VITE_APP_HOST}:${import.meta.env.VITE_APP_PORT}`,
@@ -71,6 +71,8 @@
     align-items: center;
     position: relative;
     gap: 10px;
+
+    color: white;
 
     img {
         display: flex;

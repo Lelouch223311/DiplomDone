@@ -37,7 +37,7 @@ export default {
         // const data = await fetch(`http://${procces.env.VITE_APP_HOST}:${procces.env.VITE_APP_PORT}/api/products?populate=*`)
         // const data = await fetch(`http://${import.meta.env.VITE_APP_HOST}:${import.meta.env.VITE_APP_PORT}/api/products?populate=*`)
         // const data = await fetch(`http://localhost:1337/api/products?populate=*`)
-        const data = await fetch(`https://hopeful-birds-d30950b277.strapiapp.com/api/products?populate=*`)
+        const data = await fetch(`https://cozy-chicken-d411647e9f.strapiapp.com/api/products?populate=*`)
     
         const js = await data.json()
         this.products = js.data
@@ -53,7 +53,10 @@ export default {
     margin: 40px auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 20px; /* 20 px */
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 5px;
 }
 
 </style>
