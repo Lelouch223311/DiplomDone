@@ -1,5 +1,8 @@
 <template>
 
+    <Modalka />
+
+
     <HeaderIndonesia />
     <MainIndonesia 
 
@@ -14,13 +17,16 @@
         text2="Наслаждаться бескрайними просторами песчаного моря, быть свидетелем великолепия взмывающей в небо горы Семеру и любоваться красотой солнца, выходящего из-под своего ложа, или иным образом наслаждаться тусклыми сумерками с хребта Бромо - это незабываемые впечатления от посещения Бромо."
 
         />
+
     <MainIndonesia 
         :imgSrc="image2"
         header="Наша культура здесь очень дружелюбна к людям"
         caption="Известна своей вежливостью, манерами и мягкостью. Это становится характерной чертой, когда они смешиваются с другими племенами, и становится основными чертами, передаваемыми их предками." 
         
         />
-        <cards />
+    <cards />
+
+    <FooterIndonesia />
 
 
 
@@ -59,11 +65,14 @@
 }
 </style>
 <script>
+let btn = document.body.querySelector('.btnOne')
 // import CenterIndonesia from '../components/CenterIndonesia.vue';
 import CenterIndonesia from '../components/CenterIndonesia.vue';
 import HeaderIndonesia from '../components/HeaderIndonesia.vue';
 import MainIndonesia from '../components/MainIndonesia.vue';
 import cards from '../views/cards.vue';
+import FooterIndonesia from '../components/FooterIndonesia.vue';
+import Modalka from '../components/Modalka.vue'
 // console.log(` 'Путь этого файла: client/views/HomeView.vue' ${import.meta.env.VITE_APP_HOST} + ":" + ${import.meta.env.VITE_APP_PORT}`);
 // console.log(`${procces.env.VITE_APP_HOST}:${procces.env.VITE_APP_PORT}  HomeView.vue`)
 
@@ -74,7 +83,9 @@ export default {
         HeaderIndonesia,
         MainIndonesia,
         CenterIndonesia,
-        cards
+        cards,
+        FooterIndonesia,
+        Modalka
     },
     data() {
         return {
@@ -98,4 +109,10 @@ export default {
     },
 };
 
+
+
+
+// let modalka = document.body.querySelector('.alert')
+// modalka = 'Здравствуйте ! Я увы не смог доделать адаптив нормально,так что на телефоне он будет ужасным\n\Связанно это с тем,что почти под конец,Я решил изменить свой проект,и просто не успел доделать.'
+// alert(modalka)
 </script>

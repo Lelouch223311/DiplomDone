@@ -2,6 +2,7 @@
 import { RouterView, RouterLink } from 'vue-router';
 
 // console.log(`${procces.env.VITE_APP_HOST}:${procces.env.VITE_APP_PORT} app.vue`)
+import FooterIndonesia from './components/FooterIndonesia.vue';
 
 
 
@@ -9,6 +10,7 @@ import { RouterView, RouterLink } from 'vue-router';
 
 
 <template>
+
 
   <!-- <header>
     <ul>
@@ -25,8 +27,9 @@ import { RouterView, RouterLink } from 'vue-router';
 
   <main>
     <RouterView />
-
   </main>
+  <!-- <FooterIndonesia /> -->
+
 </template>
 
 <style scoped>
@@ -36,39 +39,12 @@ body {
   user-select: none;
 }
 main{
+  /* position: relative; */
   background-color: black;
-}
-
-/* header{
-  width: 100%;
-  box-shadow: 0 0 10px black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
-    
-    li{
-      a{
-        text-decoration: none;
-        color: black;
-        &:hover{
-          color: blue;
-        }
-      }
-      & .router-link-active{
-        color: red;
-      }
-    }
-  }
-} */
-
-main{
+  padding-bottom: 200px;
   flex: 1 1 auto;
-  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 1px;
   
 }
 

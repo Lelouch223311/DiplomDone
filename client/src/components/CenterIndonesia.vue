@@ -4,7 +4,7 @@
 
     <div class="cartinka h-[80vh] flex justify-center items-center w-2/3 rounded-xl flex-col">
       <p class="flex justify-center text-white font-bold text-3xl">{{ text }}</p>
-      <p class="flex text-white">{{ text2 }}</p>
+      <p class="flex text-white text-wrap justify-center text-center">{{ text2 }}</p>
     </div>
 
   </div>
