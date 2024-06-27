@@ -1,6 +1,8 @@
 <template>
 
-    <Modalka />
+    <Modalka 
+
+    />
 
 
     <HeaderIndonesia />
