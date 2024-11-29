@@ -6,7 +6,7 @@
 
         <div class="nav flex gap-10 text-white">
             <nav class="navigation">
-                <RouterLink to="#info">Информация</RouterLink>
+                <RouterLink to="/info">Информация</RouterLink>
             </nav>
             <nav class="navigation">
                 <RouterLink to="#aboutme">О Нас</RouterLink>
